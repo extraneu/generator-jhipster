@@ -217,7 +217,8 @@
                                  baseTableName="<%= jhiTablePrefix %>_persistent_audit_evt_data"
                                  constraintName="fk_evt_pers_audit_evt_data"
                                  referencedColumnNames="event_id"
-                                 referencedTableName="<%= jhiTablePrefix %>_persistent_audit_event"/>
+                                 referencedTableName="<%= jhiTablePrefix %>_persistent_audit_event"
+								 onDelete="CASCADE"/>
     </changeSet>
 
     <changeSet author="jhipster" id="00000000000002" context="test">
